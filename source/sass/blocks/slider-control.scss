@@ -1,0 +1,94 @@
+.slider-control__button {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  @include vp-699 {
+    display: block;
+    width: 25px;
+  }
+
+  @include vp-319 {
+    width: 22px;
+  }
+}
+
+.slider-control__button-prev.is-not-js,
+.slider-control__button-next.is-not-js {
+  display: none;
+}
+
+.slider-control .swiper-button-prev {
+  left: -26px;
+  top: 48%;
+
+  &::after {
+    display: none;
+  }
+
+  @include vp-319 {
+    left: -20px;
+    top: 48%;
+  }
+}
+
+.slider-control .swiper-button-next {
+  right: -24px;
+  top: 48%;
+
+  &::after {
+    display: none;
+  }
+
+  @include vp-319 {
+    right: -18px;
+    top: 48%;
+  }
+}
+
+.slider-control.advt-btn .swiper-button-prev {
+  left: -21px;
+  top: 44%;
+}
+
+.slider-control.advt-btn .swiper-button-next {
+  right: -18px;
+  top: 44%;
+}
+
+.slider-control__button svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-control__button-next svg {
+  transform: rotate(180deg);
+}
+
+.slider-control__button-prev svg,
+.slider-control__button-next svg {
+  fill: none;
+  stroke: $color-smalt;
+}
+
+.slider-control__button-prev:hover svg,
+.slider-control__button-next:hover svg {
+  stroke: $color-soya-bean;
+}
+
+.slider-control__button-prev:active svg,
+.slider-control__button-next:active svg {
+  stroke: $color-soya-bean;
+}
+
+.slider-control__button-prev:focus,
+.slider-control__button-next:focus {
+  outline: none;
+}
+
+.slider-control__button-prev:focus svg,
+.slider-control__button-next:focus svg {
+  stroke: $color-soya-bean;
+}
