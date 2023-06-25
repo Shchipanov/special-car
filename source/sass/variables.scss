@@ -27,9 +27,8 @@ $fz-default: 18px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-arial: "Arial", "Arial", sans-serif;
-
-$ff-lato: "Lato", "Arial", sans-serif;
+$ff-opensans: "Open-Sans", "Arial", sans-serif;
+$ff-disketmono: "DisketMono", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -57,6 +56,7 @@ $vp-1280: 1280px;
 $vp-1340: 1340px;
 $vp-1440: 1440px;
 $vp-1920: 1920px;
+$vp-1927: 1927px;
 
 // Retina
 // ---------------------------------

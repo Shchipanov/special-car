@@ -2,21 +2,10 @@
   position: relative;
 
   overflow: hidden;
-  background-image: url("../img/background/header-back.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $color-back-header;
+  background-color: var(--unnamed, #2C180D);
   color: $color-default-white;
 
-  @media (min-width: 1024px) {
-    @include retina {
-      background-image: url("../img/background/header-back@2x.jpg");
-    }
-  }
-
-  @include vp-1019 {
-    background-position: bottom;
-  }
+  
 }
 
 .main-header__decor-wrapper {

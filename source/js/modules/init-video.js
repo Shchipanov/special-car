@@ -1,4 +1,4 @@
-import {video} from '../../media/video';
+/* import {video} from '../../media/video';
 
 export const initVideo = function () {
   const player = document.querySelector('[data-video-player]');
@@ -26,4 +26,4 @@ export const initVideo = function () {
       }
     });
   }
-};
+};*/

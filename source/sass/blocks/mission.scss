@@ -57,7 +57,7 @@
   display: inline-block;
   vertical-align: middle;
 
-  font-family: $ff-lato;
+  //font-family: $ff-lato;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
@@ -67,7 +67,7 @@
   @include vp-699 {
     margin: 0 0 0 27px;
 
-    font-family: $ff-arial;
+    //font-family: $ff-arial;
     font-size: 16px;
     line-height: 20px;
   }
@@ -170,7 +170,7 @@
   vertical-align: middle;
   position: relative;
 
-  font-family: $ff-lato;
+  //font-family: $ff-lato;
   font-weight: 400;
   font-size: 48px;
   line-height: 80px;
@@ -234,7 +234,7 @@
 .mission__content p {
   margin: 40px 0;
 
-  font-family: $ff-arial;
+  //font-family: $ff-arial;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -273,7 +273,7 @@
   justify-content: center;
   user-select: none;
 
-  font-family: $ff-arial;
+  //font-family: $ff-arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;

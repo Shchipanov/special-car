@@ -1,0 +1,101 @@
+.best-offer {
+  padding: 188px 0 308px;
+  position: relative;
+  background-image: url("../img/background/best-offer-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-back-header;
+  color: $color-default-white;
+  overflow: hidden;
+  background-position: 100% 21%;
+
+  @media (min-width: 1024px) {
+    @include retina {
+      background-image: url("../img/background/background/best-offer-background@2x.jpg");
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 157%;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+    background-image: url("../img/background/shadow.png");
+    //background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='1324' height='1000' viewBox='0 0 1324 1000' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg style='mix-blend-mode:hard-light'%3e%3cpath d='M9.53433 -80L-72 1063H744.768L1324 -32.8871L9.53433 -80Z' fill='url(%23paint0_linear_536_81)'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient id='paint0_linear_536_81' x1='626.551' y1='297.927' x2='1188.83' y2='572.09' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23363636'/%3e%3cstop offset='0.309712' stop-color='%233B3B3B' stop-opacity='0.653133'/%3e%3cstop offset='0.892884' stop-color='%23444444' stop-opacity='0'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-size: contain;
+    //background-size: cover;
+    opacity: 0.9;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1677px;
+    height: 613px;
+    background-image: url("../img/background/fuel-tanker.png");
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.best-offer__anons {
+  position: relative;
+  z-index: 1;
+  h2,
+  b {
+    margin: 0;
+    max-width: 862px;
+
+    font-family: $ff-disketmono;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 124.7%;
+    color: #fcfcfc;
+  }
+
+  b {
+    color: #ff552f;
+  }
+
+  p {
+    margin: 0;
+    max-width: 527px;
+
+    font-size: 42px;
+    font-family: $ff-opensans;
+    font-weight: 700;
+    line-height: 138.682%;
+    letter-spacing: -0.21px;
+
+    &:last-of-type {
+      margin-top: 20px;
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: -1.89px;
+    }
+  }
+
+
+}
+
+.best-offer__pagination {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 413px;
+height: 34px;
+    background-image: url("../img/pagination.png");
+    background-repeat: no-repeat;
+    right: 415px;
+    bottom: -254px;
+  }
+}

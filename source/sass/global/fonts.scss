@@ -1,25 +1,16 @@
 @font-face {
-  font-family: "Arial";
-  src: url("../fonts/arial.woff2") format("woff2"),
-    url("../fonts/arial.woff") format("woff");
+  font-family: "Open-Sans";
+  src: url("../fonts/opensans-regular.woff2") format("woff2"),
+    url("../fonts/opensans-regular.woff") format("woff");
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato-bold.woff2") format("woff2"),
-    url("../../fonts/lato-bold.woff") format("woff");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato-regular.woff2") format("woff2"),
-    url("../../fonts/lato-regular.woff") format("woff");
+  font-family: "DisketMono";
+  src: url("../fonts/disketmono.woff2") format("woff2"),
+    url("../fonts/disketmono.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
