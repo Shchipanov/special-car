@@ -38,8 +38,7 @@
 .main-nav__logo-image {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 93px;
+  width: 93px;
 
   margin-right: 33px;
 
@@ -88,18 +87,23 @@
 }
 
 .main-nav__link-mail {
-  //width: max-content;
-
-  display: inline-flex;
+  width: max-content;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   //flex-grow: 1;
-  vertical-align: middle;
   font-family: $ff-disketmono;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fcfcfc;
+
+  span {
+    max-width: 150px;
+    width: 100%;
+    display: block;
+    text-align: end;
+  }
 }
 
 .main-nav__item-city {
@@ -124,8 +128,7 @@
 .main-nav__link-mail-image {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 20px;
+  width: 20px;
 
   &::before {
     content: "";
@@ -147,12 +150,10 @@
   width: 100%;
 }
 
-.main-nav__btn {
+.main-nav__btn-image {
   position: relative;
   overflow: hidden;
-  max-width: 66px;
-  max-height: 41px;
-  width: 100%;
+  width: 66px;
 
   &::before {
     content: "";
@@ -174,12 +175,14 @@
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   list-style-type: none;
 }
 
 .main-nav__language-item {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   span {
     font-family: $ff-disketmono;
     font-size: 6.744px;
@@ -192,8 +195,7 @@
 .main-nav__language-image {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 32px;
+  width: 32px;
 
   &::before {
     content: "";
