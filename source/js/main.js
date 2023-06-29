@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 
 import {addText} from './modules/adding-text';
 import {sliderTrainers, removeNotJs, sliderAdvt} from './modules/slider';
+import {removeImage} from './modules/catalog-image';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,5 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
     sliderTrainers();
     removeNotJs();
     sliderAdvt();
+    removeImage();
   });
 });
