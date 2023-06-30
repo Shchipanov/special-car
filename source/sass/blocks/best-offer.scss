@@ -31,17 +31,6 @@
     //background-size: cover;
     opacity: 0.9;
   }
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 1677px;
-    height: 613px;
-    background-image: url("../img/background/fuel-tanker.png");
-    background-repeat: no-repeat;
-    right: 0;
-    bottom: 0;
-  }
 }
 
 .best-offer__anons {
@@ -79,6 +68,17 @@
       font-weight: 600;
       letter-spacing: -1.89px;
     }
+
+    &::after {
+    position: absolute;
+    content: "";
+    width: 1677px;
+    height: 613px;
+    background-image: url("../img/background/fuel-tanker.png");
+    background-repeat: no-repeat;
+    right: -211px;
+    bottom: -325px;
+  }
   }
 
 
