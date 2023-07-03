@@ -26,6 +26,7 @@
     height: 5px;
     background-color: #d0d9e1;
     bottom: -11px;
+    transition: background-color $trans-default;
   }
 
   &--active {
@@ -43,7 +44,7 @@
 
   &:focus {
     outline: none;
-    
+
     &::before {
       background-color: #ff552f;
     }

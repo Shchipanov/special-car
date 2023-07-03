@@ -1486,10 +1486,13 @@ button,
 }
 
 .main-header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
   overflow: hidden;
   background-color: var(--unnamed, #2C180D);
   color: #ffffff;
+  opacity: 0.9;
 }
 
 .main-header__decor-wrapper {
@@ -1546,6 +1549,9 @@ button,
   font-weight: 600;
   line-height: 140.023%;
   color: #fefefe;
+  /*@media (min-width: 700px) {
+    display: none
+  }*/
 }
 
 .main-nav__logo-image {
@@ -1668,7 +1674,7 @@ button,
 
 .main-nav__link-mail:hover::before,
 .main-nav__link-mail:active::before {
-  display: block;
+  visibility: visible;
 }
 
 .main-nav__link-mail:focus {
@@ -1677,7 +1683,7 @@ button,
 }
 
 .main-nav__link-mail:focus::before {
-  display: block;
+  visibility: visible;
 }
 
 .main-nav__link-mail span {
@@ -1689,7 +1695,7 @@ button,
 }
 
 .main-nav__link-mail::before {
-  display: none;
+  visibility: hidden;
   position: absolute;
   content: "";
   width: 20px;
@@ -1699,6 +1705,9 @@ button,
   background-position: 50%;
   background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.97631 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64645ZM15 3.5L1 3.5L1 4.5L15 4.5L15 3.5Z' fill='black'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
+  -webkit-transition: visibility 0.3s ease;
+  -o-transition: visibility 0.3s ease;
+  transition: visibility 0.3s ease;
 }
 
 .main-nav__item-city {
@@ -1798,6 +1807,9 @@ button,
   object-fit: cover;
   fill: #fcfcfc;
   stroke: #fcfcfc;
+  -webkit-transition: fill 0.6s cubic-bezier(0.55, 0, 0.1, 1), stroke 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: fill 0.6s cubic-bezier(0.55, 0, 0.1, 1), stroke 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: fill 0.6s cubic-bezier(0.55, 0, 0.1, 1), stroke 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 .main-nav__item-language {
@@ -1829,6 +1841,9 @@ button,
   font-weight: 700;
   line-height: 140.023%;
   color: #a5a5a5;
+  -webkit-transition: color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 .main-nav__language-item .btn {
@@ -1885,6 +1900,9 @@ button,
   width: 28px;
   height: 20px;
   opacity: 0.2;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   /*&::before {
     content: "";
     display: block;
@@ -2157,6 +2175,9 @@ button,
   height: 5px;
   background-color: #d0d9e1;
   bottom: -11px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .brands__link--active::before {
@@ -2302,7 +2323,7 @@ button,
 }
 
 .catalog__link::after {
-  display: none;
+  visibility: hidden;
   position: absolute;
   content: "";
   width: 65px;
@@ -2311,10 +2332,13 @@ button,
   left: -3px;
   top: -3px;
   z-index: -1;
+  -webkit-transition: visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 .catalog__link::before {
-  display: none;
+  visibility: hidden;
   position: absolute;
   content: "";
   width: 65px;
@@ -2323,13 +2347,16 @@ button,
   right: -3px;
   top: -3px;
   z-index: -1;
+  -webkit-transition: visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 .catalog__link:hover::before,
 .catalog__link:hover::after,
 .catalog__link:active::before,
 .catalog__link:active::after {
-  display: block;
+  visibility: visible;
 }
 
 .catalog__link:focus {
@@ -2338,7 +2365,7 @@ button,
 
 .catalog__link:focus::before,
 .catalog__link:focus::after {
-  display: block;
+  visibility: visible;
 }
 
 .catalog__image-wrapper {
@@ -2450,19 +2477,25 @@ button,
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1439px) {
   .container {
     padding: 0 40px;
+  }
+
+  .main-nav__logo p {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-nav__logo-image {
+    width: 200px;
   }
 }
 
 @media (max-width: 1019px) {
   .main-header__decor-wrapper {
     display: none;
-  }
-
-  .main-nav__logo {
-    margin: 0 0 0 20px;
   }
 }
 

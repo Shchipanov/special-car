@@ -65,7 +65,7 @@
   flex-grow: 1;
 
   &::after {
-    display: none;
+    visibility: hidden;
     position: absolute;
     content: "";
     width: 65px;
@@ -74,10 +74,11 @@
     left: -3px;
     top: -3px;
     z-index: -1;
+    transition: visibility $trans-modal;
   }
 
   &::before {
-    display: none;
+    visibility: hidden;
     position: absolute;
     content: "";
     width: 65px;
@@ -86,13 +87,14 @@
     right: -3px;
     top: -3px;
     z-index: -1;
+    transition: visibility $trans-modal;
   }
 
   &:hover,
   &:active {
     &::before,
     &::after {
-      display: block;
+      visibility: visible;
     }
   }
 
@@ -100,7 +102,7 @@
     outline: none;
     &::before,
     &::after {
-      display: block;
+      visibility: visible;
     }
   }
 }

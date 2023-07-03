@@ -1,11 +1,14 @@
 .main-header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 
   overflow: hidden;
   background-color: var(--unnamed, #2C180D);
   color: $color-default-white;
+  opacity: 0.9;
 
-  
+
 }
 
 .main-header__decor-wrapper {
