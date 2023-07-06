@@ -19,6 +19,7 @@ function removeImage() {
   wrappers.forEach((wrapper) => {
     const catalogImage = wrapper.querySelector('[data-catalog-image]');
     if (catalogImage) {
+      wrapper.classList.add('catalog__image-wrapper--add-image');
       wrapper.querySelector('[data-catalog-decor]').style.display = 'none';
       wrapper.querySelector('[data-catalog-text]').style.display = 'none';
     }

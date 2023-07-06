@@ -2051,7 +2051,7 @@ button,
 }
 
 .best-offer {
-  padding: 272px 0 290px;
+  padding: 272px 0 287px;
   position: relative;
   background-image: url("../img/background/best-offer-background.jpg");
   background-repeat: no-repeat;
@@ -2074,6 +2074,17 @@ button,
   background-repeat: no-repeat;
   background-size: auto;
   opacity: 0.9;
+}
+
+.best-offer::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/background/shadow-bottom.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  right: -389px;
 }
 
 .best-offer__container {
@@ -2110,12 +2121,12 @@ button,
   font-size: 42px;
   font-family: "Open-Sans", "Arial", sans-serif;
   font-weight: 700;
-  line-height: 138.682%;
-  letter-spacing: -0.21px;
+  line-height: 146.682%;
+  letter-spacing: 1.79px;
 }
 
 .best-offer__anons p:last-of-type {
-  margin-top: 28px;
+  margin-top: 21px;
   font-size: 42px;
   font-weight: 600;
   letter-spacing: -1.89px;
@@ -2128,8 +2139,8 @@ button,
   height: 613px;
   background-image: url("../img/background/fuel-tanker.png");
   background-repeat: no-repeat;
-  right: -71px;
-  bottom: -329px;
+  right: -76px;
+  bottom: -305px;
 }
 
 .best-offer__pagination {
@@ -2146,25 +2157,26 @@ button,
   height: 34px;
   background-image: url("../img/pagination.png");
   background-repeat: no-repeat;
-  right: 239px;
-  bottom: -276px;
+  right: 231px;
+  bottom: -252px;
 }
 
 .brands {
-  margin: 0;
+  margin: 0 118px 0 auto;
   padding: 0;
-  margin-left: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[3];
   grid-template-columns: repeat(3, auto);
   list-style-type: none;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
 }
 
 .brands__link {
   width: 84px;
   height: 69px;
-  margin-top: -11px;
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2184,7 +2196,7 @@ button,
   width: 70px;
   height: 5px;
   background-color: #d0d9e1;
-  bottom: -11px;
+  bottom: -3px;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -2207,9 +2219,21 @@ button,
   background-color: #ff552f;
 }
 
+.brands__link-gaz {
+  width: 81px;
+}
+
 .brands__link-gaz .brands__image {
   width: 80px;
   height: 59px;
+}
+
+.brands__link-trailers {
+  margin-top: -4px;
+}
+
+.brands__link-trailers::before {
+  bottom: -7px;
 }
 
 .brands__link-trailers .brands__image {
@@ -2247,7 +2271,9 @@ button,
 }
 
 .catalog__wrapper {
-  padding-top: 133px;
+  padding-left: 149px;
+  padding-right: 144px;
+  padding-top: 156px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2258,12 +2284,12 @@ button,
 }
 
 .catalog__wrapper h2 {
-  margin: 0 auto 40px;
+  margin: 0 auto 53px;
   max-width: 1132px;
   font-size: 50px;
   font-family: "DisketMono", "Arial", sans-serif;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 52px;
   color: #4b4b4b;
   text-align: center;
 }
@@ -2277,8 +2303,8 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (391px)[4];
-  grid-template-columns: repeat(4, 391px);
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 374px 374px;
   grid-template-rows: 374px 374px;
   -webkit-column-gap: 17px;
@@ -2379,8 +2405,7 @@ button,
 }
 
 .catalog__image-wrapper {
-  margin-bottom: 20px;
-  padding-bottom: 48px;
+  margin-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2388,9 +2413,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-box-flex: 0.5;
+  -ms-flex-positive: 0.5;
+  flex-grow: 0.5;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2399,8 +2424,14 @@ button,
   border-start-end-radius: 5px;
 }
 
+.catalog__image-wrapper--add-image {
+  -webkit-box-flex: 0.77;
+  -ms-flex-positive: 0.77;
+  flex-grow: 0.77;
+}
+
 .catalog__image-text {
-  margin: 20px 0 0 0;
+  margin: 5px 0 0 0;
   max-width: 126px;
   font-size: 16px;
   font-family: "Open-Sans", "Arial", sans-serif;
@@ -2445,6 +2476,7 @@ button,
 
 .catalog__description {
   min-height: 85px;
+  padding-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2462,7 +2494,7 @@ button,
   overflow: hidden;
   width: 127px;
   height: 99px;
-  margin-top: auto;
+  margin-top: 62px;
   /*&::before {
     content: "";
     display: block;
