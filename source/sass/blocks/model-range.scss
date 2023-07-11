@@ -1,0 +1,40 @@
+.model-range__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin: 0 0 118px;
+    max-width: 1132px;
+
+    font-family: $ff-disketmono;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #363844;
+    text-align: center;
+  }
+
+  b {
+    color: #ff552f;
+  }
+}
+
+.modal-range__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 1600px;
+  height: 583px;
+
+  background-color: #b45f06;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

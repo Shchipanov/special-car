@@ -9,10 +9,8 @@
   overflow: hidden;
   background-position: inherit;
 
-  @media (min-width: 1024px) {
-    @include retina {
-      background-image: url("../img/background/background/best-offer-background@2x.jpg");
-    }
+  @include retina {
+    background-image: url("../img/background/best-offer-background@2x.jpg");
   }
 
   &::before {

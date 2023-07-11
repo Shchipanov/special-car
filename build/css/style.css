@@ -1490,7 +1490,7 @@ button,
   width: 100%;
   z-index: 3;
   overflow: hidden;
-  background-color: var(--unnamed, #2C180D);
+  background-color: var(--unnamed, #2c180d);
   color: #ffffff;
   opacity: 0.9;
 }
@@ -1722,7 +1722,7 @@ button,
 
 .main-nav__item-mail {
   position: relative;
-  margin-right: 15px;
+  margin-right: 36px;
   width: 100%;
   max-width: 197px;
   display: -webkit-box;
@@ -1764,6 +1764,11 @@ button,
 
 .main-nav__item-btn {
   width: 100%;
+  margin-right: 18px;
+}
+
+.main-nav__item-btn .btn {
+  padding: 0;
 }
 
 .main-nav__btn:hover svg,
@@ -1815,7 +1820,7 @@ button,
 }
 
 .main-nav__item-language {
-  padding-top: 10px;
+  padding-top: 6px;
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
@@ -1898,7 +1903,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
   width: 28px;
   height: 20px;
   opacity: 0.2;
@@ -2271,9 +2275,6 @@ button,
 }
 
 .catalog__wrapper {
-  padding-left: 149px;
-  padding-right: 144px;
-  padding-top: 156px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2281,6 +2282,10 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 156px 144px 164px 149px;
 }
 
 .catalog__wrapper h2 {
@@ -2299,8 +2304,9 @@ button,
 }
 
 .catalog__list {
-  margin: 25px 0 0 0;
+  margin: 25px 0 24px 0;
   padding: 0;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -2487,6 +2493,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  background-color: #F6F6F6;
 }
 
 .catalog__decor {
@@ -2513,10 +2520,84 @@ button,
   display: none;
 }
 
-@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
-  .best-offer {
-    background-image: url("../img/background/background/best-offer-background@2x.jpg");
-  }
+.catalog-btn {
+  max-width: 312px;
+  padding: 20px 27px;
+  font-family: "DisketMono", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #363844;
+  border-radius: 2px;
+  border: 1px solid #363844;
+  -webkit-transition: font-weight 0.6s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.6s cubic-bezier(0.55, 0, 0.1, 1), border 0.6s cubic-bezier(0.55, 0, 0.1, 1), color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: font-weight 0.6s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.6s cubic-bezier(0.55, 0, 0.1, 1), border 0.6s cubic-bezier(0.55, 0, 0.1, 1), color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: font-weight 0.6s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.6s cubic-bezier(0.55, 0, 0.1, 1), border 0.6s cubic-bezier(0.55, 0, 0.1, 1), color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.catalog-btn:hover {
+  font-weight: 700;
+}
+
+.catalog-btn:active {
+  background-color: #ff552f;
+  border: 1px solid #fefefe;
+  color: #fefefe;
+}
+
+.model-range__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.model-range__wrapper h2 {
+  margin: 0 0 118px;
+  max-width: 1132px;
+  font-family: "DisketMono", "Arial", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #363844;
+  text-align: center;
+}
+
+.model-range__wrapper b {
+  color: #ff552f;
+}
+
+.modal-range__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 1600px;
+  height: 583px;
+  background-color: #b45f06;
+}
+
+.modal-range__banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 @media (max-width: 1439px) {
@@ -2576,5 +2657,11 @@ button,
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .best-offer {
+    background-image: url("../img/background/best-offer-background@2x.jpg");
   }
 }
